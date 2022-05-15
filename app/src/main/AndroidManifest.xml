@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHealth">
         <activity
+            android:name=".RulesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutDevActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity

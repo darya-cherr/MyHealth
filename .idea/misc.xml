@@ -5,12 +5,17 @@
       <map>
         <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/drawable/button.xml" value="0.165" />
         <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/drawable/ic_logo.xml" value="0.165" />
+        <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/drawable/image.xml" value="0.142" />
+        <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/drawable/nav_menu.xml" value="0.142" />
         <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/drawable/splash.xml" value="0.165" />
         <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/drawable/splash_screen.xml" value="0.165" />
         <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/layout/activity_login.xml" value="0.19610507246376813" />
-        <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/layout/activity_main.xml" value="0.144" />
         <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/layout/activity_rules.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/layout/activity_splash_screen.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/layout/nav_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Dasha_2/AndroidStudioProjects/MyHealth/app/src/main/res/menu/menu.xml" value="1.2035714285714285" />
       </map>
     </option>
   </component>

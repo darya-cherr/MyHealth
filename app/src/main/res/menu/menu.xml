@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_about_me"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="About"
+        android:onClick="navigationMenuItemClick"/>
+
+    <item android:id="@+id/menu_rules"
+        android:icon="@drawable/ic_baseline_rule_24"
+        android:title="Rules"
+        android:onClick="navigationMenuItemClick" />
+</menu>
