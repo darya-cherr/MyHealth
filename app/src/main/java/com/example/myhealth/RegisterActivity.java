@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +33,8 @@ public class RegisterActivity extends AppCompatActivity {
     TextInputEditText etRegPassword;
     TextView tvLoginHere;
     AppCompatButton btnRegister;
+    Spinner spinner;
+    String zodiac = "Овен";
 
     FirebaseAuth mAuth;
     private FirebaseDatabase database;
@@ -49,6 +54,25 @@ public class RegisterActivity extends AppCompatActivity {
         etRegPassword = findViewById(R.id.etRegPass);
         tvLoginHere = findViewById(R.id.tvLoginHere);
         btnRegister = findViewById(R.id.btnRegister);
+        spinner = findViewById(R.id.spinner);
+
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(RegisterActivity.this, android.R.layout.simple_expandable_list_item_1, getResources().getStringArray(R.array.zodiacs));
+        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setBackgroundResource(R.drawable.button2);
+        spinner.setPopupBackgroundDrawable(getDrawable(R.color.transp));
+        spinner.setAdapter(myAdapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                zodiac = spinner.getSelectedItem().toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
@@ -89,6 +113,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                         user.setEmail(email);
                         user.setName(name);
+                        user.setZodiac(zodiac);
                         user.setPassword(password);
 
                         users.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {

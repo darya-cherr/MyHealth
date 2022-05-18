@@ -29,7 +29,7 @@ public class ProfileFragment extends Fragment {
     private DatabaseReference myRef;
     private FirebaseUser user;
     private FirebaseAuth mAuth;
-    private TextView welcomeTxt;
+    private TextView nameTxt;
 
     public ProfileFragment() {
 
@@ -58,14 +58,14 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        welcomeTxt = view.findViewById(R.id.welcome_txt);
+        nameTxt = view.findViewById(R.id.name_txt);
 
         user = mAuth.getInstance().getCurrentUser();
         myRef = FirebaseDatabase.getInstance().getReference("Users/" + user.getUid()).child("name");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                welcomeTxt.setText("С возвращением, " +  snapshot.getValue().toString() + "!");
+                nameTxt.setText(snapshot.getValue().toString());
             }
 
             @Override
