@@ -7,7 +7,6 @@
     android:background="@color/background">
 
     <ScrollView
-        android:id="@+id/myview"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -19,10 +18,11 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:id="@+id/welcome_txt"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/gudea"
-                android:text="С возвращением!"
+                android:text="С возвращением, "
                 android:textColor="@color/white"
                 android:textSize="24sp" />
 
